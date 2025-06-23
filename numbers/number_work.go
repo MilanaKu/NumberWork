@@ -14,7 +14,7 @@ func main() {
 	fmt.Scanln(&d)
 	fmt.Print("Введите число:")
 	fmt.Scanln(&e)
-	var i int
+
 	myArray := [5]int{a, b, c, d, e}
 	n := len(myArray)
 	for i := 0; i < n-1; i++ {
@@ -25,8 +25,9 @@ func main() {
 		}
 	}
 	var average = float64(a+b+c+d+e) / 5
-	fmt.Print("Отсортированные элементы:", myArray[i])
+	fmt.Printf("%d, %d, %d, %d, %d\n", myArray[0], myArray[1], myArray[2], myArray[3], myArray[4])
 	fmt.Println("Самое большое число:", myArray[0])
 	fmt.Println("Самое маленькое число:", myArray[4])
 	fmt.Println("Среднее арифметическое число:", average)
 }
+
